@@ -1,0 +1,43 @@
+.recipe-header {
+  padding: 1rem;
+}
+
+.all-recipes-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+button {
+  align-self: center;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: pink;
+  border-radius: 1rem;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgb(225, 225, 225, 0.6);
+}
+
+.modal-content-container {
+  padding: 2rem;
+  width: 400px;
+  margin: auto;
+  margin-top: 5rem;
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  border-radius: 1rem;
+}
+.modal-content-container > * {
+  margin-bottom: 1rem;
+}
+
+.modal-content-container input {
+  padding: 0.3rem;
+  border: 1px solid rgb(183, 183, 183);
+}

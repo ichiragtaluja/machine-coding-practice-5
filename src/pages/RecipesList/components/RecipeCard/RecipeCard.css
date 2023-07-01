@@ -1,0 +1,24 @@
+.recipe-card {
+  box-shadow: 0px -1px 26px 4px rgba(191, 191, 191, 1);
+  margin: 1rem;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.recipe-image-container img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.recipe-name-container,
+.recipe-ingredients-container,
+.recipe-cuisine-type-container,
+.recipe-instructions-container {
+  padding: 0.5rem;
+}

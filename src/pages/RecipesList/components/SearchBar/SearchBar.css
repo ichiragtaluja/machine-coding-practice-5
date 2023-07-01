@@ -1,0 +1,27 @@
+.searchbar-container {
+  border: 1px solid grey;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.searchbar {
+  padding: 0.5rem;
+  border: none;
+  border-right: 1px solid grey;
+  border-radius: 0.5rem;
+}
+
+.filters-container {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.input-container > label {
+  margin-left: 0.5rem;
+  margin-right: 0.3rem;
+}
+.input-container input {
+  margin-right: 0.3rem;
+}

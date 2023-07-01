@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useData } from "./contexts/DataProvider";
+import { Route, Routes } from "react-router-dom";
+import { RecipesList } from "./pages/RecipesList/RecipesList";
+import { RecipeDetail } from "./pages/RecipeDetail/RecipeDetail";
 
 function App() {
+  const { val } = useData();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<RecipesList />} />
+        <Route path="/recipedetail/:id" element={<RecipeDetail />} />
+      </Routes>
     </div>
   );
 }
